@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="text1">Hola cane</string>
+    <string name="text2">Hola mundo</string>
+    <string name="saludar1">Saludar</string>
 </resources>
