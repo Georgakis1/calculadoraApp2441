@@ -3,4 +3,10 @@
     <string name="text1">Hola cane</string>
     <string name="text2">Hola mundo</string>
     <string name="saludar1">Saludar</string>
+    <string name="N2Label">N2</string>
+    <string name="N1Label">N1</string>
+    <string name="sumarTxt">+</string>
+    <string name="dividirTxt">/</string>
+    <string name="multiplicarTxt">*</string>
+    <string name="restarTxt">-</string>
 </resources>

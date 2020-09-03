@@ -7,46 +7,121 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/primary_light"
-        android:textSize="40dp"
-        android:gravity="center"
-        android:layout_weight="1"
+    <ImageView
+    android:layout_marginTop="@dimen/marginBase"
+    android:src="@drawable/calculadora"
+    android:layout_height="@dimen/tamanioImagen"
+    android:layout_width="wrap_content">
+    </ImageView>
 
-        android:text="@string/text1"
+    <LinearLayout
+        android:layout_marginTop="@dimen/marginBase"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/N1Label"
+        android:textSize="@dimen/tamanioLetra"
 
         ></TextView>
-    <TextView
-        android:background="@color/primary_light"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="40dp"
-        android:gravity="center"
-        android:layout_weight="1"
-
-        android:text="@string/text2"
+        <EditText
+            android:id="@+id/n1Txt"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textSize="@dimen/tamanioLetra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></EditText>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/marginBase2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
 
+        >
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/N2Label"
+            android:textSize="@dimen/tamanioLetra"
 
-        ></TextView>
+            ></TextView>
+        <EditText
+            android:id="@+id/n2Txt"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/tamanioLetra"
 
-        <Button
-        android:layout_weight="1"
-        android:text="@string/saludar1"
-        android:textSize="40sp"
-        android:layout_gravity="bottom"
-        android:textColor="@color/primary_light"
-        android:background="@color/colorPrimaryDark"
-        android:layout_height="match_parent"
-        android:onClick="Saludar"
-        android:layout_width="match_parent"
+            ></EditText>
+    </LinearLayout>
 
+        <LinearLayout
+            android:layout_marginTop="@dimen/marginBase2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:background="@color/colorSuma"
+                android:textColor="@color/primary_light"
+                android:layout_width="match_parent"
+                android:text="@string/sumarTxt"
+                android:textSize="@dimen/tamanioLetra"
+                android:layout_height="@dimen/tamanioBtn"
 
+                android:onClick="Sumar"
+                ></Button>
+            <Button
+                android:layout_weight="1"
+                android:background="@color/colorResta"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tamanioBtn"
+                android:text="@string/restarTxt"
+                android:textSize="@dimen/tamanioLetra"
 
-            ></Button>
+                android:onClick="Restar"
+                ></Button>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/marginBase2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tamanioBtn"
+                android:layout_weight="1"
+                android:background="@color/colorMulti"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tamanioLetra"
+                android:text="@string/multiplicarTxt"
+
+                android:onClick="Multiplicar"
+                ></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tamanioBtn"
+                android:layout_weight="1"
+                android:background="@color/colorDiv"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tamanioLetra"
+                android:text="@string/dividirTxt"
+
+                android:onClick="Dividir"
+                ></Button>
+
+        </LinearLayout>
+
 
 
 
